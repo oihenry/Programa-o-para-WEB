@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Dev.</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Cadastro de Desenvolvedores</h1>
+        </div>
+
+        <form action="" id="form-cadastro">
+            <div class="form-section" id="personal-info">
+                <div class="input-group">
+                    <label for="nome">Nome completo:</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </div><br>
+
+                <div class="input-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div><br>
+
+                <div class="input-group">
+                    <label for="Age">Idade:</label><br>
+                    <input type="number" id="Age" name="Age">
+                </div><br>
+
+                <div class="input-group">
+                    <label for="born">Data de nascimento:</label><br>
+                    <input type="date" id="born" name="born" required>
+                </div><br>
+
+                <div class="input-group" id="gender-group">
+                    <label>Gênero:</label><br>
+                    <input type="radio" id="masculino" name="gender" value="masculino"> 
+                    <label for="masculino"> Masculino</label><br>
+                    <input type="radio" id="feminino" name="gender" value="feminino">
+                    <label for="masculino"> Feminino</label><br>
+                    <input type="radio" id="prefiro_nao_informar" name="gender" value="prefiro_nao_informar">
+                    <label for="prefiro_nao_informar"> Prefiro não informar</label><br>
+                </div>
+            </div><br>
+
+            <div class="form-section" id="professional-info">
+                <div class="input-group" id="languages-group">
+                    <label>Linguagens de programação conhecidas</label><br>
+                    <input type="checkbox" name="lip" id="JavaScript" value="JavaScript">   
+                    <label for="JavaScript"> JavaScript</label><br> 
+                    <input type="checkbox" name="lip" id="Python" value="JavaScript">   
+                    <label for="Python"> Python</label><br> 
+                    <input type="checkbox" name="lip" id="Java" value="Java">   
+                    <label for="Java"> Java</label><br> 
+                    <input type="checkbox" name="lip" id="C#" value="C#">   
+                    <label for="C#"> C#</label><br> 
+                    <input type="checkbox" name="lip" id="Ruby" value="Ruby">   
+                    <label for="Ruby"> Ruby</label><br> 
+                </div>
+                
+                <div class="input-group">
+                    <label for="experiencia">Nível de experiência:</label><br>
+                    <select id="experiencia" name="experiencia">
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div><br>
+
+                <div class="input-group">
+                    <label for="portfolio">Link para portfólio ou GitHub:</label><br>
+                    <input type="url" id="portfolio" name="portfolio">
+                </div><br>
+                
+                <div class="input-group">
+                    <label for="disponibilidade">Disponibilidade para trabalho semanais:</label><br>
+                    <input type="time" id="disponibilidade" name="disponibilidade">
+                </div><br>
+
+                <div class="input-group">
+                    <label for="localizacao">Localização atual:</label><br>
+                    <select id="localizacao" name="localizacao">
+                        <option value="">Selecione...</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="recife">Recife</option>
+                        <option value="porto-alegre">Porto Alegre</option>
+                        <option value="Campina-Grande">Campina Grande</option>
+                    </select>
+                </div><br>
+
+                <div class="input-group">
+                    <label for="curriculo">Currículo (arquivo PDF):</label><br>
+                    <input type="file" id="curriculo" name="curriculo" accept=".pdf">
+                </div><br>
+
+                <div class="input-group">
+                    <label for="Biography">Biografia ou descrição pessoal:</label><br>
+                    <textarea id="Biography" name="Biography" rows="7" cols="50"></textarea>
+                </div><br>
+            </div>
+
+            <div class="form-section" id="terms-section">
+                <div class="input-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Aceito os termos de uso</label>
+                </div><br>
+            </div>
+
+            <div class="form-section" id="buttons-section">
+                <div class="input-group">
+                    <input type="submit" value="Enviar Cadastro" class="btn" id="submit-btn">
+                    <input type="reset" value="Limpar Formulário" class="btn" id="reset-btn">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
