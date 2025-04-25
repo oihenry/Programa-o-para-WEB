@@ -1,0 +1,16 @@
+body, .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box, .content{
+    align-items: center;
+}
+img {
+    border-radius: 1rem; /*mania de UI*/
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    
+}
