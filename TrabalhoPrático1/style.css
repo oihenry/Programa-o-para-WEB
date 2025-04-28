@@ -1,0 +1,269 @@
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #333;
+    background-color: #EEF2FF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #EEF2FF;
+    color: #54008C;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Rowdies', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #54008C;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #54008C;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8f3fff;
+}
+
+.hero {
+    padding: 4rem 2rem;
+    background-color: #54008C;
+    color: white;
+}
+
+.conteudo-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.texto-hero {
+    flex: 1;
+    max-width: 600px;
+}
+
+.texto-hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.texto-hero p {
+    font-size: 1.1rem;
+}
+
+.imagem-hero {
+    flex-shrink: 0;
+}
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #EEF2FF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.carreira {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carreira h2 {
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #54008C;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-quadrado {
+    background-color: white;
+    padding: 1.8rem;
+    width: 280px;
+    height: 280px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-quadrado h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #54008C;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card-quadrado p {
+    margin-top: 0.8rem;
+}
+
+.metas {
+    padding: 3rem 2rem;
+    background-color: #EEF2FF;
+    display: flex;
+    justify-content: center;
+}
+
+.container-centralizado {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.metas h2 {
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #54008C;
+}
+
+.cartao-meta {
+    background-color: white;
+    padding: 1.8rem;
+    margin-bottom: 1.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.cartao-meta h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #54008C;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #54008C;
+    color: white;
+}
+
+footer .logo {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .conteudo-hero {
+        gap: 2rem;
+    }
+    
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .conteudo-hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .texto-hero {
+        max-width: 100%;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .texto-hero h1 {
+        font-size: 2rem;
+    }
+
+    .texto-hero p {
+        font-size: 1rem;
+    }
+
+    .card-quadrado {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+    }
+}
