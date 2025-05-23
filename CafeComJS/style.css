@@ -1,0 +1,69 @@
+body, .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box, .content {
+    align-items: center;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carrinho {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cupom-area {
+    margin: 10px 0;
+}
+
+#itens-carrinho div {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.precoItem {
+    color: #2c3e50;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.carrinho {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background: #f8f9fa;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.content {
+    margin-right: 320px;
+    padding: 20px;
+}
+
+.cupom-valido {
+    background-color: #e8f5e9 !important;
+    border: 2px solid #4caf50 !important;
+}
