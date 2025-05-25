@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrique Souza - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&family=Roboto:wght@500;700&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">HS</div>
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#carreira">Carreira</a></li>
+                <li><a href="#metas">Metas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="controle-botoes">
+        <button class="btn-ocultar" onclick="toggleSection('sobreMim')">Ocultar Sobre Mim</button>
+        <button class="btn-ocultar" onclick="toggleSection('carreira')">Ocultar Carreira</button>
+        <button class="btn-ocultar" onclick="toggleSection('metas')">Ocultar Metas</button>
+    </div>
+
+        <section class="sobreMim" id="sobreMim">
+            <div class="conteudo-sobreMim">
+                <div class="texto-sobreMim">
+                    <h1>Henrique de Souza</h1>
+                    <p>Graduando de engenharia de Software, me aventuro em esportes e sou apaixonado pela música, essa veia cultural me aproximou da UI/UX experience, e hoje essa é minha principal linha de pesquisa.</p>
+                </div>
+                <div class="imagem-sobreMim">
+                    <img src="./assets/Screenshot_20240322_084654_Video Player.jpg" alt="Foto do autor" class="foto-perfil">
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="carreira" class="carreira">
+            <h2>Carreira</h2>
+            <div class="container-cards">
+                <div class="card-quadrado">
+                    <h3>ES</h3>
+                    <p>7º semestre de Engenharia de software na UFC-Russas</p>
+                </div>
+                <div class="card-quadrado">
+                    <h3>UI/UX</h3>
+                    <p>Cerca de 1 ano de experiência voluntária na empresa INCLUDE JR.</p>
+                </div>
+                <div class="card-quadrado">
+                    <h3>UI/UX</h3>
+                    <p>1 ano de estágio no laboratório de 8x6 para usabilidade, diversidade e inclusão (LUDI)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="metas" class="metas">
+            <div class="container-centralizado">
+                <h2>Metas</h2>
+                <div class="cartao-meta">
+                    <h3>Experiência internacional</h3>
+                    <p>Pretendo explorar áreas do tecnologia em países como Canadá e Alemanha</p>
+                </div>
+                <div class="cartao-meta">
+                    <h3>Mundo acadêmico</h3>
+                    <p>Desejo realizar pesquisa que relacionem sexualidade, tecnologias e luta de classes, no meio acadêmico</p>
+                    <div class="contagem-regressiva">
+                        <div class="timer">
+                            <span id="dias">00</span>d 
+                            <span id="horas">00</span>h 
+                            <span id="minutos">00</span>m 
+                            <span id="segundos">00</span>s
+                        </div>
+                        <p class="legenda-timer">Tempo restante para a notificação dos resultados da minha primeira submissão de artigo</p>
+                    </div>
+                </div>
+                <div class="cartao-meta">
+                    <h3>Realizações pessoais</h3>
+                    <p>Pretendo melhorar o situação de vida do minha família, estabilizar-me financeiramente e viajar inúmeros vezes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container-form">
+                <h2>Contate-me</h2>
+                <p class="chamada">Se você deseja melhorar a experiência do seu usuário e a qualidade do seu produto, contate-me</p>
+
+                <form id="formContato" class="form-estilo">
+                    <div class="grupo-form">
+                        <label>Nome</label>
+                        <input type="text" placeholder="digite seu nome" required>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label>Email</label>
+                        <input type="email" placeholder="digite seu email" required>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label>Mensagem</label>
+                        <textarea rows="3" placeholder="descreva seu projeto ou necessidade"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Proposta</button>
+                </form>
+
+                  <div class="momento-ux">
+                        <div class="data-hora">
+                            <span id="dataAtual">24 de Junho de 2024</span>
+                            <span id="horaAtual">14:30</span>
+                        </div>
+                        <p class="legenda-ux">Este é o momento perfeito para melhorar seu produto com um bom UX!</p>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <div class="separador"></div>
+    <footer>
+        <div class="logo">HS</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
