@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do lanche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Hora do lanche</h2>
+    <P>Lanches</P>
+    <div class="content">
+
+        <div class="box">
+            <img src="https://static.itdg.com.br/images/640-400/ce464b65fe55ff7f03a68d7b1d6850c6/318013-original.jpg" alt="Pão de Queijo" width="200">
+            <a href="./Receitas/PaoDeQueijo.html" target="_parent">Pão de Queijo</a>
+            <p class="precoItem">R$ 10,00</p>
+            <button onclick="adicionarAoCarrinho('Pão de Queijo', 10)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="box">
+            <img src="https://static.itdg.com.br/images/640-400/34b9fb585d6b2730ab91a3422a0e9d50/bolo-de-cenoura.jpg" alt="Bolo de Cenoura" width="200">
+            <a href="./Receitas/BoloDeCenoura.html" target="_parent">Bolo de Cenoura</a>
+            <p class="precoItem">R$ 15,00</p>
+            <button onclick="adicionarAoCarrinho('Bolo de Cenoura', 15)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="box">
+            <img src="https://static.itdg.com.br/images/640-400/9640a1c8dcd573d2bd7fa914cc58bdc1/321880-original.jpg" alt="Tapioca" width="200">
+            <a href="./Receitas/Tapioca.html" target="_parent">Tapioca</a>
+            <p class="precoItem">R$ 12,00</p>
+            <button onclick="adicionarAoCarrinho('Tapioca', 12)">Adicionar ao Carrinho</button>
+        </div>
+
+    </div>
+
+    <div class="carrinho">
+        <h3>Carrinho de Compras</h3>
+        <div id="itens-carrinho"></div>
+        <div class="cupom-area">
+            <input type="text" id="cupom" placeholder="Digite seu cupom">
+            <button onclick="aplicarCupom()">Aplicar Cupom</button>
+        </div>
+        <p>Subtotal: R$<span id="subtotal">0</span></p>
+        <p>Desconto: R$<span id="desconto">0</span></p>
+        <p>Total: R$<span id="total">0</span></p>
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
